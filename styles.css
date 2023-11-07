@@ -43,21 +43,24 @@ nav {
     display: flex;
     gap: 5px;
     align-items: center;
-    height: 70px;
-    width: 220px;
+    height: 50px;
+    width: 120px;
     /* border: 2px solid white; */
 }
 
 .h1-logo {
-    font-size: 38px;
+    font-size: 35px;
     font-weight: bolder;
     color: goldenrod;
 }
 
 .logo-image {
     display: flex;
-    height: 45px;
-    width: 50px;
+    height: 55px;
+    width: 55px;
+    /* border: 2px solid green; */
+   
+
 }
 
 .logo-ro,
@@ -66,20 +69,10 @@ nav {
     /* border: 2px green solid; */
 }
 
-/* .button-nav {
-    color: white;
-    background-color: goldenrod;
-    border: none;
-    font-weight: bold;
-    font-size: 152px;
-    padding: 5px;
-    border-radius: 4px;
-    border: 2px solid red;
-} */
 
 .fas {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     color: white;
     background-color: goldenrod;
     border-radius: 4px;
@@ -92,8 +85,8 @@ nav {
     background-color: black;
     color: white;
     border: 2px solid goldenrod;
-    height: 36px;
-    width: 36px;
+    height: 30px;
+    width: 30px;
     transition: all .2s linear;
 }
 
@@ -107,14 +100,15 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 45px;
-    width: 160px;
+    width: 105px;
     padding: 3px;
+    /* border: 2px solid red; */
 
 }
 
 .fa-bars {
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     /* border: 2px solid green */
     
 }
@@ -162,23 +156,33 @@ li:hover a {
         padding-top: 6px;
     }
 
-    /* .fa-solid {
+    .fa-solid {
         display: block;
-    } */
+    }
 
     @media screen and (max-width: 510px) {
+
+        nav {
+           height: 70px;
+        }
+
     .h1-logo {
         font-size: 25px;
     }
 
     .logo-div {
         width: 140px;
+        border: 2px  white;
     }
 
     .logo-image {
          height: 25px;
         width: 30px; 
-        /* border: 2px solid; */
+        border: 2px  rgb(144, 27, 27);
+    }
+
+    .icon-div {
+        gap: 2px;
     }
 
 
@@ -192,7 +196,7 @@ li:hover a {
     }
 
     .logo-image {
-        height: 20px;
+        height: 25px;
         width: 30px;
     }
 }
@@ -251,7 +255,7 @@ li:hover a {
     height: fit-content;
     background-blend-mode: darken;
     background: rgba(0, 0, 0, 0.83);
-    padding-bottom: 35px;
+    padding-bottom: 75px;
     background-image: url(diversefood.jpg);
 }
 
@@ -282,7 +286,7 @@ li:hover a {
     height: 300px;
     width: 410px;
     position: absolute;
-    right: -15px;
+    right: -10px;
     z-index: 2;
     opacity: 0.65;
     /* border: 2px solid rgb(214, 28, 28); */
@@ -343,26 +347,29 @@ li:hover a {
     }
 
     .section1-button {
-        margin-top: 20px;
+        margin-top: 50px;
         margin-left: -10px;
     }
 
     .img1 {
-        height: 220px;
-        width: 270px;
+        height: 160px;
+        width: 220px;
         top: 190px;
         right: 35px;
+        margin-top: -90px;
+        margin-left: -190px;
     }
 
     .spoon {
         height: 250px;
         width: 250px;
+        margin-top: -65px;
     }
 
 
 
     .section-one {
-        padding-bottom: 150px;
+        padding-bottom: 40px;
         height: fit-content;
         padding-left: 20px;
     }
@@ -370,9 +377,16 @@ li:hover a {
     .h1-section1 {
         font-size: 28px;
         font-weight: bolder;
+        margin-top: -80px;
+        width: 230px;
+        margin-left: 10px;
     }
+}
 
-
+@media screen and (max-width: 330px) {
+    .icon-div {
+        display: none;
+    }
 }
 
 
@@ -388,7 +402,7 @@ li:hover a {
 }
 
 .h1-section2 {
-    font-size: x-large;
+    font-size: large;
     font-weight: bolder;
 
 
@@ -396,12 +410,12 @@ li:hover a {
 
 .section2-button {
     background-color: black;
-    width: 200px;
-    padding: 7px;
+    width: 180px;
+    padding: 5px;
     color: goldenrod;
     font-weight: bolder;
     border: none;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 
@@ -409,32 +423,31 @@ li:hover a {
 .section-three {
     height: fit-content;
     width: 100%;
-    /* padding-bottom: 725px; */
     padding: 30px;
     display: flex;
     justify-content: center;
     gap: 3vw;
     flex-wrap: wrap;
     padding-top: 75px;
-    /* clip-path: polygon(10, 120, 12, 70, 90, 87); */
     background-color: rgb(240, 219, 167);
     border-top-left-radius: 290px 110px;
     border-top-right-radius: 290px 110px;
 }
 
 .container {
-    height: 400px;
-    width: 280px;
+    height: fit-content;
+    width: 250px;
     border: 1px solid;
     text-align: center;
     margin-bottom: 50px;
     border-radius: 5px;
     background-color: black;
+    padding-bottom: 10px;
 }
 
 .container-image {
     height: 200px;
-    width: 278px;
+    width: 248px;
     margin-bottom: 10px;
     border-radius: 10px;
     /* border: 2px solid; */
@@ -497,7 +510,7 @@ li:hover a {
 
 .h1-section3-B {
     color: goldenrod;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .p-section3-B {
@@ -505,6 +518,15 @@ li:hover a {
     /* border: 2px solid white; */
     text-align: left;
 }
+
+    
+@media screen and (max-width: 500px) {
+    .p-section3-B {
+       font-size: 14px;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+   
 
 
 
@@ -526,6 +548,7 @@ li:hover a {
     font-weight: bolder;
     font-size: 16px;
     border: none;
+    margin-bottom: -15px;
 }
 
 
@@ -546,7 +569,7 @@ li:hover a {
 }
 
 .food-card {
-    height: 255px;
+    height: 250px;
     width: 250px;
     /* border: 2px solid red; */
     border-radius: 4px;
@@ -555,7 +578,7 @@ li:hover a {
 }
 
 .details {
-    height: 55px;
+    height: 50px;
     width: 250px;
     background-color: grey;
     overflow: scroll;
@@ -568,6 +591,13 @@ li:hover a {
     padding-right: 15px;
 }
 
+@media screen and (max-width: 500px) {
+    .details {
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
 .p-details {
     font-size: 16px;
 }
@@ -575,7 +605,7 @@ li:hover a {
 .h1-details {
     margin: 10px;
     color: gold;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -641,11 +671,11 @@ li:hover a {
         height: fit-content;
         width: 85vw;
         border-radius: 4px;
-        padding-top: 30px;
-        padding-left: 20px;
+        padding-top: 18px;
+        padding-left: 15px;
         border-radius: 3px;
         padding-right: 20px;
-        padding-bottom: 25px;
+        padding-bottom: 15px;
         box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.3);
         /* border: 2px solid red; */
     }
@@ -679,6 +709,14 @@ li:hover a {
     margin-top: 15px;
     text-align: left;
 }
+
+ @media screen and (max-width: 500px){
+    .p-section5-A-text-box {
+      font-size: small;
+      height: fit-content;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+ }
 
 .new-dish-alert {
     color: goldenrod;
@@ -809,10 +847,12 @@ li:hover a {
 
 .p-menu-container {
     border: 1.5px solid black;
-    padding: 5px;
+    padding: 2.5px;
     font-weight: bold;
     border-radius: 6px;
-    height: 34px;
+    /* height: 26px; */
+    height: fit-content;
+    font-size: 12px;
 }
 
 .p-menu-container:hover {
@@ -842,7 +882,7 @@ li:hover a {
     background-color: black;
     color: goldenrod;
     font-weight: bolder;
-    width: 250px;
+    width: 200px;
     padding: 7px;
     padding-bottom: 9px;
     border: none;
@@ -1184,8 +1224,11 @@ li:hover a {
 
 @media screen and (max-width: 510px) {
     .statement-box {
-        height: 190px;
+        height: fit-content;
+        padding-bottom: 12px;
         width: 350px;
+        font-size: small;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         padding-bottom: 20px;
     }
 
@@ -1329,6 +1372,17 @@ sub {
     box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
+@media screen and (max-width: 500px) {
+    .About-us-textbox {
+       font-size: small;
+       padding-bottom: 20px;
+       padding-top: 20px;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+
+
+
 .About-image-div {
     height: 270px;
     width: 400px;
@@ -1337,11 +1391,20 @@ sub {
     box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
+@media screen and (max-width: 500px) {
+    .About-image-div {
+       height: 235px;
+       width: 380px;
+    }
+}
+
 .about-image {
     height: inherit;
     width: 100%;
     border-radius: 5px;
 }
+
+
 
 .hello {
     height: 75px;
@@ -1607,9 +1670,17 @@ sub {
 
 .footer-content {
     margin: 3.5%;
+    /* font-family: sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* border: 2px solid red; */
     text-align: left;
 }
+
+ @media screen  and (max-width:500px) {
+    .footer-content {
+        font-size: small;
+    }
+ }
 
 .footer-content h1 {
     /* border: 2px solid white; */
